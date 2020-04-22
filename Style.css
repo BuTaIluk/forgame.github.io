@@ -1,0 +1,86 @@
+*{
+	padding:0;
+	margin:0;
+}
+a{
+	color: black; 
+	font-weight: bold; 
+	text-decoration:none; 
+}
+@font-face{
+	font-family: font-1;
+	src: url(Font/RUBBBB__.TTF);
+}
+@font-face{
+	font-family: font-2;
+	src: url(Font/RUBBBI__.TTF);
+}
+
+/*Window-page*/
+body{
+	display:grid;
+	grid-template-areas:	"item-1 item-1 item-1"
+							"item-1 item-1 item-1"
+							"item-2 item-3 item-4";
+	grid-template-columns: 1fr 4fr 1fr ;
+	grid-template-rows: 2fr 1fr 2fr;
+	/*characteristic*/
+	width: 100vw;
+	height: 100vh;
+	/*color*/	
+}
+/*Grid-areas-body*/
+#item-1{
+	grid-area: item-1;
+	background: url(img/header.png) no-repeat 100%/100%;
+}
+#item-2{
+	grid-area: item-2;
+}
+#item-3{
+	grid-area: item-3;
+}
+#item-4{
+	grid-area: item-4;
+}
+/**/
+#NameGame{
+	grid-area: namegame;
+}
+#emptyHeader{
+	grid-area: emptyheader;
+}
+#BtnHeader{
+	grid-area: btnheader;
+}
+/**/
+#DownloadGame{
+	grid-area: downloadgame;
+}
+#UpdatesGame{
+	grid-area: updatesgame;
+}
+/**/
+#header{
+	font-family: font-1;
+	display:grid;
+	width:1000px;
+	margin:0 auto;
+	grid-template-areas:"namegame emptyheader btnheader";
+	grid-template-columns: 2fr 1fr 2fr ;
+	grid-template-rows: 150px;
+	align-items: center;
+}#NameGame{
+	font-size:26px;
+}
+#BtnHeader{
+	
+	display:grid;
+	grid-template-areas:"downloadgame updatesgame";
+	font-size:24px;
+}
+#TextInfoGame{
+	padding:70px 50px 0 50px;
+	font-family: font-2;
+	font-size:24px;
+}
